@@ -1,0 +1,21 @@
+To add DB 
+dotnet ef migrations add AddingTable
+dotnet ef database update
+dotnet run
+
+INSERT INTO Todos (Title, Description, Priority, IsCompleted, CreatedAt, UpdatedAt)
+VALUES ('Task 4', 'Description for task 4', 1, 0, NOW(), NOW());
+
+Frontend : npm run dev
+
+initial installations
+dotnet new webapi -n TodoAppAPI
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+Frontend
+npm install -g @vue/cli
+vue create todo-app-frontend
+npm install axios
